@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Black Ops One", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+
+.navbar1 {
+  display: flex;
+  height: 40px;
+  width: 99%;
+  border: 1.5px solid #000;
+  border-radius: 15px;
+  margin: 10px auto;
+  padding: 20px 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar1 .logo{
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.navbar1 input{
+  height: 50%;
+  width: 80px;
+  padding: 0px 10px 0px 20px;
+  /* position: relative;
+  right: 15%;
+  top: 0; */
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  margin-top: 2px;
+  outline: none;
+}
+
+.navbar1 .input{
+  height: 50%;
+  width: 100px;
+  padding: 5px 10px;
+  position: relative;
+  right: 15%;
+  top: 0;
+  border-radius: 20px;
+  border: none;
+  background-color: #eee;
+  align-items: center;
+  margin-top: 2px;
+  outline: none;
+}
+
+.ri-search-line {
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  z-index: 1;
+
+}
+
+.ri-menu-line {
+  display: none;
+}
+
+.navbar1 ul {
+  display: flex;
+  margin-right: 9px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar1 ul a {
+  margin-right: 9px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.ri-mail-line {
+  margin-left: 10px;
+}
+
+.container {
+  width: 99%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-row: 100px;
+  gap: 5px;
+  margin: 5px auto;
+}
+
+.grid {
+  border-radius: 8px; 
+}
+
+.card1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+
+.card1 h1 {
+  text-transform: uppercase;
+  font-family:"Black Ops One", sans-serif;
+  margin-bottom: 120px;
+  font-size: 4.5rem;
+}
+
+.card1 .ri-arrow-right-line {
+  font-weight: 2px;
+  width: 200px;
+  height: 10px;
+}
+
+.card1 p {
+  font-size: medium;
+  width: 70%;
+}
+
+.card2 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../image-pro4/hat-guy1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  grid-column: 3;
+  grid-row: 1 / 4;
+  position: relative;
+}
+
+.card2 .circle-btn {
+  position: absolute;
+  top: 400px;
+  right: 200px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid #fff;
+  background-color: #ccc;
+  opacity: .8;
+}
+
+.card2 .circle-btn h4 {
+  font-size: x-small;
+  color: #fff;
+  font-weight: 200px;
+}
+
+.card2 .btns {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 50px;
+  right: 80px;
+}
+
+.card2 .butn1 {
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  padding: 4px;
+  width: 120px;
+  align-items: center;
+}
+
+.card2 .butn1 .btn1 {
+  font-size: .5rem;
+  border: none;
+  font-weight: 900;
+  margin-left: 5px;
+  background: transparent;
+}
+
+
+.card2 .butn1 .ri-arrow-down-circle-fill {
+  margin-left: 27px;
+}
+
+.card2 .butn2 {
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: #fff;
+  padding: 4px;
+  width: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card2 .butn2 .btn2 {
+  color: #fff;
+  font-size: .5rem;
+  border: none;
+  font-weight: 900;
+  margin-left: 5px;
+  background: transparent;
+}
+
+.card2 .butn2 .ri-mail-line {
+  margin-left: 25px;
+}
+
+.card3 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../image-pro4/hat-guy2.jpg);
+  background-size: cover;
+  object-fit: contain;
+  position: relative;
+}
+
+.card3 h2{
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  color: white;
+}
+
+.card4 {
+  height: 200px;
+  width: 350px;
+  background-image: url(../image-pro4/cap-guy2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card4 h2{
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  color: white;
+}
+
+@media (max-width: 680px) {
+
+  .container {
+    display: grid;
+  }
+  
+  .grid {
+    display: grid;
+  }
+
+  .navbar1 .logo{
+    text-transform: uppercase;
+    font-size: .8em;
+  }
+
+  .navbar1 ul {
+    display: none;
+  }
+
+  .ri-menu-line {
+    display: block;
+  }
+
+  .card1 h1 {
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .card1 p {
+    text-align: center;
+    font-size: small;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .card2 {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card3 {
+    display: block;
+  }
+
+  .card4 {
+    display: block;
+  }
+}
+  
