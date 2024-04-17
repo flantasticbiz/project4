@@ -4,13 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: "Black Ops One", sans-serif;
-  font-weight: 400;
-  font-style: normal; */
 }
 
 body {
-  margin: 0;
+  /* margin: 20px; */
+  padding: 5px;
   height: 100vh;
   width: 100vw;
   justify-content: center;
@@ -102,16 +100,24 @@ body {
   margin-left: 10px;
 }
 
+
+/* Start of main body */
+
+.wrapper {
+  padding: 10px;
+}
 .container {
   width: 99%;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-row: 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
   gap: 5px;
   margin: 5px auto;
 }
 
 .grid {
+  height: 100%;
+  width: 100%;
   border-radius: 8px; 
 }
 
@@ -120,13 +126,14 @@ body {
   grid-row: 1 / 3;
   background-color: antiquewhite;
   padding: 10px;
+  overflow: hidden;
 }
 
 .card1 h1 {
   text-transform: uppercase;
   font-family:"Black Ops One", sans-serif;
-  margin-bottom: 120px;
-  font-size: 4.5rem;
+  margin-bottom: 80px;
+  font-size: 4rem;
 }
 
 .card1 .ri-arrow-right-line {
@@ -138,6 +145,19 @@ body {
 .card1 p {
   font-size: medium;
   width: 70%;
+  min-width: 50%;
+}
+
+.grid .image {
+  height: 100%;
+  width: 100%;
+}
+
+.grid .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .card2 {
@@ -146,8 +166,9 @@ body {
   background-image: url(../image-pro4/hat-guy1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: contain;
-  grid-column: 3;
+  object-fit: cover;
+  object-position: 50% 50%;
+  grid-column: 3 / 5;
   grid-row: 1 / 4;
   position: relative;
 }
@@ -231,7 +252,8 @@ body {
   width: 100%;
   background-image: url(../image-pro4/hat-guy2.jpg);
   background-size: cover;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 50% 50%;
   position: relative;
 }
 
@@ -244,11 +266,12 @@ body {
 }
 
 .card4 {
-  height: 200px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   background-image: url(../image-pro4/cap-guy2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  object-position: 50% 50%;
   position: relative;
 }
 
@@ -260,10 +283,20 @@ body {
   color: white;
 }
 
+@media (max-width:1100px) {
+  .card1 h1 {
+    font-size: 3.2rem;
+  }
+
+  .card1 p {
+    font-size: small;
+  }
+}
+
 @media (max-width: 680px) {
 
   .container {
-    display: grid;
+    grid-template-columns: 1fr;
   }
   
   .grid {
@@ -285,7 +318,7 @@ body {
 
   .card1 h1 {
     margin-bottom: 80px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -296,18 +329,40 @@ body {
     padding: 0 20px;
   }
 
+
   .card2 {
     display: block;
     height: 100%;
     width: 100%;
+    grid-column: 1;
+    grid-row: span 2;
+  }
+
+  .card2 .circle-btn {
+    position: absolute;
+    top: 200px;
+    left: 45%;
+  }
+
+  .card2 .btns {
+    bottom: 50px;
+    right: 40px;
   }
 
   .card3 {
     display: block;
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+    grid-row: span 2;
   }
 
   .card4 {
     display: block;
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+    grid-row: span 2;
   }
 }
   
